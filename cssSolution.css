@@ -6,69 +6,254 @@ body {
     height: 100%;
 }
 
+
 .firstF{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-    margin-bottom: 0%;
+    display: grid;
+    text-align: center;
+    margin-bottom: 3rem;
 }
-
-.headshoot{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    flex: 1;
-    color: hsl(300, 43%, 22%);
-
+.second{
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-
 .headshoot h1{
     font-size: 40px;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
-
-.starsSection{
-    display: grid;
-    flex-wrap: wrap;
-    flex: 2;
+.headshoot{
     color: hsl(300, 43%, 22%);
+    font-family: 'League Spartan', sans-serif;
 }
-
+.headshoot p{
+    font-size: 18px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+.starsSection{
+    font-family: 'League Spartan', sans-serif;
+    color: hsl(300, 43%, 22%);
+    display: grid;
+    grid-template-rows: repeat(3);
+    grid-template-columns: 1rem 1fr 1rem;
+    gap: 1rem;
+}
 .stars{
+    font-weight: 700;
+    font-size: 12px;
+    width: 100%;
     background-color: hsl(300, 24%, 96%);
-    border-radius: 10%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0.5rem;
+    border-radius: 3%;
 }
-
 .reviews{
-    align-self: flex-start;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
-
 .guru{
-    align-self: right;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
-
-.stars.bestTech{
-    justify-items: end;
+.bestTech{
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
-
 .testimony{
-    display: flex;
-    background-color: hsl(300, 43%, 22%);;
+    display:grid;
+    gap: 1rem;
 }
-
+.testimony article{
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'League Spartan', sans-serif;
+    padding: 1rem;
+    border-radius: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2rem 2rem 1fr 1fr;
+}
 .selfie{
     border-radius: 50%;
-    flex: 0;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+.figure{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 0.5rem;
 }
 
-.attribution {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-top: auto;
-    margin-bottom: 2%;
+.name{
+    grid-column: 2/5;
+    grid-row: 1/2;
+    font-weight: 500;
+}
+
+.verified{
+    grid-column: 2/5;
+    grid-row: 2/3;
+    font-weight: 500;
+    color:hsl(333, 80%, 67%);
+}
+
+.message{
+    grid-column: 1/5;
+    grid-row: 3/5;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media(min-width:1000px){
+    .firstF{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        gap: 2rem;
+    }
+
+    .testimony{
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: 0.5rem 0.5rem 1fr 0.5rem 0.5rem;
+        gap: 0 1rem;
+    }
+
+
+    .testimony article{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2rem 2rem 1fr 1fr;
+    }
+
+    .headshoot{
+        color: hsl(300, 43%, 22%);
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .headshoot h1{
+        font-size: 50px;
+    }
+
+
+    .starsSection{
+        color: hsl(300, 43%, 22%);
+        display: grid;
+        grid-template-columns: 2rem 2rem 400px 2rem 2rem;
+        gap: 1rem 0;
+        grid-column: 2/-1;
+        grid-template-rows: repeat(3, 50px);
+        font-family: 'League Spartan', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 32px;
+        justify-self: center;
+        align-self: end;
+    }
+
+    .stars{
+        font-size: 10px;
+        width: 100%;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 3%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-content : center;
+    }
+    .stars figure{
+        grid-column: 1/2;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .reviews{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .guru{
+        grid-row: 2/3;
+        grid-column: 2/5;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .bestTech{
+        grid-row: 3/-1;
+        grid-column: 3/-1;
+    }
+
+    .testimony article{
+        background-color: hsl(300, 43%, 22%);
+        color: hsl(0, 0%, 100%);
+        font-family: 'League Spartan', sans-serif;
+        padding: 1rem;
+        border-radius: 3%;
+    }
+
+    .verified{
+        color:hsl(333, 80%, 67%);
+    }
+
+    .selfie{
+        border-radius: 50%;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .figure{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        padding: 0.5rem;
+    }
+
+    .name{
+        grid-column: 2/5;
+        grid-row: 1/2;
+        font-weight: 500;
+    }
+
+    .verified{
+        grid-column: 2/5;
+        grid-row: 2/3;
+        font-weight: 500;
+    }
+
+    .message{
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding: 1rem;
+    }
+
+    .colton{
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    .irene{
+        grid-column: 2/3;
+        grid-row: 2/5;
+    }
+
+    .anne{
+        grid-column: 3/-1;
+        grid-row: 3/-1;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        margin-top: auto;
+        margin-bottom: 0%;
+    }
 }
