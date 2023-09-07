@@ -16,8 +16,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -40,8 +38,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/understanding-css-grid-layout-FNNDpcMXj6)
+- Live Site URL: (https://social-proof-section-master-nine-iota.vercel.app/)
 
 ## My process
 
@@ -51,60 +49,50 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+For this challenge i learn that i can't solve everything whit flexbox, at first use css grid 
+was very complicated and intimidating bot after a few attemps and errors i manage understand the logic
+behind this
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
 .proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+  .starsSection{
+        color: hsl(300, 43%, 22%);
+        display: grid;
+        grid-template-columns: 2rem 2rem 400px 2rem 2rem;
+        gap: 1rem 0;
+        grid-column: 2/-1;
+        grid-template-rows: repeat(3, 50px);
+        font-family: 'League Spartan', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 32px;
+        justify-self: center;
+        align-self: end;
+    }
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+If you want more help with writing markdown, we'd recommend checking out (https://css-tricks.com/snippets/css/complete-guide-grid/) to learn more.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+refine my understanding and implementation of css grid and polish my practice on html tags
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+https://www.youtube.com/playlist?list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl
+https://www.youtube.com/watch?v=Fj6BGtNvXIc&t=1500s&ab_channel=VidaMRR-Programacionweb
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Julieta Galatea Calderon](https://github.com/JulietaGalatea)
+- Frontend Mentor - [@JulietaGalatea](https://www.frontendmentor.io/profile/JulietaGalatea)
+- Twitter - [@JulietaGCalder1](https://twitter.com/JulietaGCalder1)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+To be honest, I don't know if I can give advice on this, but I can say that if someone with limited resources and without university studies could do this, of course, you can too.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
